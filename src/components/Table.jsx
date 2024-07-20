@@ -48,7 +48,7 @@ export const Table = ({ data, onAddNoteClick, onArchiveToggle }) => {
                   onClick={() => handleArchiveClick(user)}
                   disabled={loadingId === user.id}
                 >
-                  {user?.is_archived ? 'Unarchive' : 'Archive'}
+                  {user?.is_archived ? 'Archived' : 'Unarchived'}
                 </button>
               </td>
               <td>

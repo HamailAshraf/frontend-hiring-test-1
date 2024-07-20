@@ -33,6 +33,7 @@ export const UnArchived = () => {
         }
     };
     const unarchivedData = data.filter(call => !call.is_archived);
+    console.log(unarchivedData);
     const handleSearch = async (formData) => {
         try {
             if (!formData.id || formData.id.length < 3) {
